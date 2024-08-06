@@ -77,3 +77,34 @@ df1 <- df1 |>
   arrange(index)
 head(df1)
 ```
+
+## API Limitations
+
+Let's plot the series:
+
+```{r}
+plot_ly(data = df1, x = ~ index , y = ~ value, 
+        type = "scatter", mode = "lines")
+```
+
+```{r}
+start = "2024-01-01T01"
+end = "2024-02-24T01"
+df2 <- eia_get(
+    api_key = api_key,
+    api_path = api_path,
+    frequency = frequency,
+    facets = facets,
+    start = start,
+    end = end
+)
+df2 <- df2 |>
+  mutate(index = ymd_h(period, tz = "UTC")) |>
+  select(index, everything()) |>
+  arrange(index)
+head(df2)
+```
+
+```{r}
+plot_ly(data = df2, x = ~index, y = ~value, type = "scatter", mode = "lines")
+```
