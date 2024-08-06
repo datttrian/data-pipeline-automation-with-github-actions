@@ -1,0 +1,44 @@
+---
+title: "Chapter 2 - EIA API - R Client"
+format:
+  html:
+    code-fold: false
+---
+
+In this section, we will see how query the EIA API with R using the EIAapi library.
+
+The EIAapi library provides a set of functions to query data from the EIA API V2. This includes the following functions:
+
+-   `eia_get` - to send GET request for data
+-   `eia_metadata` - to send GET request for metadata
+-   `eia_backfill` - to send a GET request for large data (more than 5000 observations)
+
+We will continue with the same example we used before - the hourly demand of electricity for balancing authority subregion PGAE. As before, we will use the API dashboard to extract the GET request:
+
+<img src="./images/query-detail.png" width="140%" align="center"/>
+
+```{r}
+library(EIAapi)
+library(dplyr)
+library(lubridate)
+library(plotly)
+```
+
+## Pulling Metadata from API
+
+Setting the api key and the api path to pull data:
+
+```{r}
+api_key <- Sys.getenv("EIA_API_KEY")
+
+api_meta_path <- "electricity/rto/region-sub-ba-data/"
+
+
+```
+
+Sending GET request for route metadata:
+
+```{r}
+eia_metadata(api_key = api_key, 
+             api_path = api_meta_path)
+```
