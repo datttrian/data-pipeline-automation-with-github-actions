@@ -156,6 +156,10 @@ index,parent,subba,time,start,end,start_act,end_act,start_match,end_match,n_obs,
 39,CISO,SDGE,2024-08-24 12:22:07.843696+00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,True,True,24.0,0.0,refresh,True,True,
 39,CISO,VEA,2024-08-24 12:22:09.050677+00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,True,True,24.0,0.0,refresh,True,True,
 40,CISO,PGAE,2024-08-25 01:02:24.764387+00:00,2024-08-24 08:00:00,2024-08-24 07:00:00,,,,,,,refresh,False,False,"No new data is available; The data refresh failed, please check the log; "
-40,CISO,SCE,2024-08-25 01:02:32.042016+00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,True,True,24,11,refresh,False,False,"Missing values were found; The data refresh failed, please check the log; "
+40,CISO,SCE,2024-08-25 01:02:32.042016+00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,2024-08-23 08:00:00,2024-08-24 07:00:00,True,True,24.0,11.0,refresh,False,False,"Missing values were found; The data refresh failed, please check the log; "
 40,CISO,SDGE,2024-08-25 01:02:32.045252+00:00,2024-08-24 08:00:00,2024-08-24 07:00:00,,,,,,,refresh,False,False,"No new data is available; The data refresh failed, please check the log; "
 40,CISO,VEA,2024-08-25 01:02:32.047260+00:00,2024-08-24 08:00:00,2024-08-24 07:00:00,,,,,,,refresh,False,False,"No new data is available; The data refresh failed, please check the log; "
+41,CISO,PGAE,2024-08-26 00:58:33.259514+00:00,2024-08-24 08:00:00,2024-08-25 07:00:00,2024-08-24 08:00:00,2024-08-25 07:00:00,True,True,24.0,0.0,refresh,True,True,
+41,CISO,SCE,2024-08-26 00:58:34.622949+00:00,2024-08-23 08:00:00,2024-08-25 07:00:00,2024-08-23 08:00:00,2024-08-25 07:00:00,True,True,48.0,11.0,refresh,False,False,"Missing values were found; The data refresh failed, please check the log; "
+41,CISO,SDGE,2024-08-26 00:58:35.584573+00:00,2024-08-24 08:00:00,2024-08-25 07:00:00,2024-08-24 08:00:00,2024-08-25 07:00:00,True,True,24.0,0.0,refresh,True,True,
+41,CISO,VEA,2024-08-26 00:58:37.442802+00:00,2024-08-24 08:00:00,2024-08-25 07:00:00,2024-08-24 08:00:00,2024-08-25 07:00:00,True,True,24.0,0.0,refresh,True,True,
